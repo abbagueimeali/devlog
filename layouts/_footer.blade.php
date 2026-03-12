@@ -70,17 +70,13 @@
           <h3 class="text-primary mb-4">Quick Links</h3>
           <div class="d-flex flex-column justify-content-start">
             <a class="text-white mb-2" href="{{ url('') }}"
-              ><i class="fa fa-angle-right mr-2"></i>Home</a
+              ><i class="fa fa-angle-right mr-2"></i>Accueil</a
             >
-            <a class="text-white mb-2" href="{{ url('about') }}"
-              ><i class="fa fa-angle-right mr-2"></i>About Us</a
+            
+            <a class="text-white mb-2" href="#"
+              ><i class="fa fa-angle-right mr-2"></i>Blog</a
             >
-            <a class="text-white mb-2" href="{{ url('blog') }}"
-              ><i class="fa fa-angle-right mr-2"></i>Our Blog</a
-            >
-            <a class="text-white" href="{{ url('contact') }}"
-              ><i class="fa fa-angle-right mr-2"></i>Contact Us</a
-            >
+            
           </div>
         </div>
         <div class="col-lg-3 col-md-6 mb-5">
@@ -116,7 +112,7 @@
       >
         <p class="m-0 text-center text-white">
           &copy;
-          <a class="text-primary font-weight-bold" href="#">Your Site Name</a>.
+          <a class="text-primary font-weight-bold" href="#">DEVLOG</a>.
           All Rights Reserved.
 
           <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
@@ -129,4 +125,5 @@
         </p>
       </div>
     </div>
+
     <!-- Footer End -->
