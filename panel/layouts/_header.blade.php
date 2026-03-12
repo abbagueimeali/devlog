@@ -11,17 +11,15 @@
     <!-- Right navbar links -->
     <ul class="navbar-nav ml-auto">
 
-      @php
-        //$AllChatUserCount = App\Models\ChatModel::getAllChatUserCount()
-      @endphp
+     
       <!-- Messages Dropdown Menu -->
       <li class="nav-item ">
-        {{--<a class="nav-link" href="{{ url('chat') }}">
+        {{--<a class="nav-link" href="#">
           <i class="far fa-comments"></i>
           <span class="badge badge-danger navbar-badge"></span>
         </a>--}}
         <div class="navbar-nav font-weight-bold mx-auto py-0">
-            <a href="{{ url('') }}" class="btn btn-primary px-4">Home</a>
+            <a href="{{ url('') }}" class="btn btn-primary px-4">Accueil</a>
         </div>
       </li>
       
@@ -34,11 +32,9 @@
   <aside class="main-sidebar sidebar-dark-primary elevation-4">
     <!-- Brand Logo -->
     <a href="javascript:;" class="brand-link" style="text-align: center">
-      @if(!empty($getHeaderSetting->getLogo()))
-      <img src="{{ $getHeaderSetting->getLogo() }}" style="width: auto; height: 60px; border-radius: 5px;"> 
-      @else
-      <span class="brand-text font-weight-light" style="font-size: bold !important;font-size: 20px;">School</span>
-      @endif
+      
+      <span class="brand-text font-weight-light" style="font-size: bold !important;font-size: 20px;">DEVLOG</span>
+      
     </a>
 
     <!-- Sidebar -->
@@ -68,15 +64,8 @@
                     </p>
                     </a>
                 </li>
-                @if(Auth::user()->is_admin == 1)
-                <li class="nav-item">
-                    <a href="{{ url('panel/user/list') }}" class="nav-link @if(Request::segment(2) == 'user') active @endif">
-                    <i class="nav-icon far fa-user"></i>
-                    <p>
-                        Users
-                    </p>
-                    </a>
-                </li>
+               
+                
                 <li class="nav-item">
                     <a href="{{ url('panel/category/list') }}" class="nav-link @if(Request::segment(2) == 'category') active @endif">
                     <i class="nav-icon far fa-user"></i>
@@ -85,7 +74,7 @@
                     </p>
                     </a>
                 </li>
-                @endif
+               
                 <li class="nav-item">
                     <a href="{{ url('panel/blog/list') }}" class="nav-link @if(Request::segment(2) == 'blog') active @endif">
                     <i class="nav-icon far fa-user"></i>
@@ -94,16 +83,7 @@
                     </p>
                     </a>
                 </li>
-                @if(Auth::user()->is_admin == 1)
-                <li class="nav-item">
-                    <a href="{{ url('panel/page/list') }}" class="nav-link @if(Request::segment(2) == 'page') active @endif">
-                    <i class="nav-icon far fa-user"></i>
-                    <p>
-                        Page
-                    </p>
-                    </a>
-                </li>
-                @endif
+                
                 
                 <li class="nav-item">
                     <a href="{{ url('panel/change-password') }}" class="nav-link @if(Request::segment(2) == 'change-password') active @endif">
@@ -128,7 +108,7 @@
             <a href="{{ url('logout') }}" class="nav-link">
               <i class="nav-icon far fa-user"></i>
               <p>
-                Logout
+                Déconnexion
               </p>
             </a>
           </li>
@@ -141,3 +121,4 @@
     </div>
     <!-- /.sidebar -->
   </aside>
+
