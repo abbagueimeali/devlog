@@ -76,7 +76,7 @@
                 </li>
                
                 <li class="nav-item">
-                    <a href="{{ url('panel/blog/list') }}" class="nav-link @if(Request::segment(2) == 'blog') active @endif">
+                    <a href="#" class="nav-link @if(Request::segment(2) == 'blog') active @endif">
                     <i class="nav-icon far fa-user"></i>
                     <p>
                         Blog
@@ -86,7 +86,7 @@
                 
                 
                 <li class="nav-item">
-                    <a href="{{ url('panel/change-password') }}" class="nav-link @if(Request::segment(2) == 'change-password') active @endif">
+                    <a href="#" class="nav-link @if(Request::segment(2) == 'change-password') active @endif">
                     <i class="nav-icon fas fa-lock"></i>
                     <p>
                         Change Password
@@ -94,7 +94,7 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="{{ url('panel/account-setting') }}" class="nav-link @if(Request::segment(2) == 'account-setting') active @endif">
+                    <a href="#" class="nav-link @if(Request::segment(2) == 'account-setting') active @endif">
                     <i class="nav-icon fas fa-cog"></i>
                     <p>
                         Account Setting
@@ -121,4 +121,5 @@
     </div>
     <!-- /.sidebar -->
   </aside>
+
 
