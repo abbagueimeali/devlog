@@ -3,17 +3,11 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{{ !empty($meta_title) ? $meta_title : '' }}</title>
-  @if (!empty($meta_keywords))
-    <meta content="{{ $meta_keywords }}" name="keywords" />
-  @endif
-  @if (!empty($meta_description))
-    <meta content="{{ $meta_description }}" name="description" />
-  @endif
-
-  @php
-    $getHeaderSetting = App\Models\SettingModel::getSingle();
-  @endphp
+  <title>DEVLOG</title>
+  <meta content="DEVLOG" name="keywords" />
+  
+  <meta content="" name="description" />
+  
   <link href="" rel="icon" type="image/jpg">
 
   <!-- Google Font: Source Sans Pro -->
@@ -88,3 +82,4 @@
 @yield('script')
 </body>
 </html>
+
