@@ -23,31 +23,35 @@
           class="collapse navbar-collapse justify-content-between"
           id="navbarCollapse"
         >
-          @php
+        {{--
+            @php
             $getCategoryHeader = App\Models\CategoryModel::getCategoryMenu();
           @endphp
+            --}}
           <div class="navbar-nav font-weight-bold mx-auto py-0">
-            <a href="{{ url('') }}" class="nav-item nav-link @if(Request::segment(1) == '') active @endif">Home</a>
-            @foreach ($getCategoryHeader as $CategoryHeader)
+            <a href="{{ url('') }}" class="nav-item nav-link @if(Request::segment(1) == '') active @endif">Accueil</a>
+            {{--
+              @foreach ($getCategoryHeader as $CategoryHeader)
               <a href="{{ url($CategoryHeader->slug) }}" class="nav-item nav-link @if(Request::segment(1) == $CategoryHeader->slug) active @endif">{{ $CategoryHeader->name }}</a>
             @endforeach
-            {{--<a href="{{ url('about') }}" class="nav-item nav-link">About</a>
-            <a href="{{ url('teams') }}" class="nav-item nav-link">Teams</a>
-            <a href="{{ url('gallery') }}" class="nav-item nav-link">Gallery</a> --}}
-            <a href="{{ url('blog') }}" class="nav-item nav-link">Blog</a>
-            <a href="{{ url('contact') }}" class="nav-item nav-link">Contact</a>
+              --}}
+            
+            
+            <a href="#" class="nav-item nav-link">Blog</a>
+            
           </div>
           @if(Auth::user())
-            <a href="{{ url('panel/dashboard') }}" class="btn btn-primary px-4">Dashboard</a>
-            <a href="{{ url('logout') }}" style="margin-left: 8px;" class="btn btn-primary px-4">Logout</a>
+            <a href="#" class="btn btn-primary px-4">Dashboard</a>
+            <a href="#" style="margin-left: 8px;" class="btn btn-primary px-4">Déconnexion</a>
           @else
-            <a href="{{ url('login') }}" class="btn btn-primary px-4">Login</a>
-            <a href="{{ url('register') }}" style="margin-left: 8px;" class="btn btn-primary px-4">Register</a>
+            <a href="#" class="btn btn-primary px-4">Se connecter</a>
+            <a href="#" style="margin-left: 8px;" class="btn btn-primary px-4">S'inscrire</a>
           @endif
           
         </div>
       </nav>
     </div>
     <!-- Navbar End -->
+
 
    
