@@ -37,9 +37,9 @@
 
 
 
-  @include('backend.layouts._header')
+  @include('panel.layouts._header')
   @yield('content')
-  @include('backend.layouts._footer')
+  @include('panel.layouts._footer')
 
   <!-- /.control-sidebar -->
 </div>
@@ -82,4 +82,5 @@
 @yield('script')
 </body>
 </html>
+
 
