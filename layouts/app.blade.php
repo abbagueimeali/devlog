@@ -3,13 +3,10 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>{{ !empty($meta_title) ? $meta_title : '' }}</title>
-    @if (!empty($meta_keywords))
-      <meta content="{{ $meta_keywords }}" name="keywords" />
-    @endif
-    @if (!empty($meta_description))
-      <meta content="{{ $meta_description }}" name="description" />
-    @endif
+    <title>DEVLOG</title>
+    <meta content="devlog" name="keywords" />
+    <meta content="" name="description" />
+   
 
     <!-- Favicon -->
     <link href="{{ asset('front/img/favicon.ico') }}" rel="icon" />
@@ -48,7 +45,7 @@
 
     @include('layouts._footer')
 
-<!-- Back to Top -->
+    <!-- Back to Top -->
     <a href="#" class="btn btn-primary p-3 back-to-top"
       ><i class="fa fa-angle-double-up"></i
     ></a>
@@ -70,4 +67,5 @@
     @yield('script')
     
   </body>
+
 </html>
