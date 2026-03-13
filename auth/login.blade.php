@@ -3,17 +3,12 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{{ !empty($meta_title) ? $meta_title : '' }}</title>
-  @if (!empty($meta_keywords))
-    <meta content="{{ $meta_keywords }}" name="keywords" />
-  @endif
-  @if (!empty($meta_description))
-    <meta content="{{ $meta_description }}" name="description" />
-  @endif
+  <title>DEVLOG</title>
+  <meta content="DEVLOG" name="keywords" />
+  <meta content="" name="description" />
 
-  @php
-    //$getHeaderSetting = App\Models\SettingModel::getSingle();
-  @endphp
+
+
   <link href="" rel="icon" type="image/jpg">
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
@@ -32,7 +27,7 @@
       <a href="" class="h1"><b>Login</b></a>
     </div>
     <div class="card-body">
-      <p class="login-box-msg">Sign in to start your session</p>
+      <p class="login-box-msg">Connectez-vous pour démarrer votre session</p>
 
       @include('_message')
 
@@ -47,7 +42,7 @@
           </div>
         </div>
         <div class="input-group mb-3">
-          <input type="password" class="form-control" name="password" placeholder="Password">
+          <input type="password" class="form-control" name="password" placeholder="Mot de passe">
           <div class="input-group-append">
             <div class="input-group-text">
               <span class="fas fa-lock"></span>
@@ -59,13 +54,13 @@
             <div class="icheck-primary">
               <input type="checkbox" id="remember" name="remember">
               <label for="remember">
-                Remember Me
+                Se souvenir de moi
               </label>
             </div>
           </div>
           <!-- /.col -->
           <div class="col-4">
-            <button type="submit" class="btn btn-primary btn-block">Sign In</button>
+            <button type="submit" class="btn btn-primary btn-block">Se connecter</button>
           </div>
           <!-- /.col -->
         </div>
@@ -75,10 +70,10 @@
       <!-- /.social-auth-links -->
 
       <p class="mb-1">
-        <a href="{{ url('forgot-password') }}">I forgot my password</a>
+        <a href="#">J'ai oublié mon mot de passe</a>
       </p>
       <p class="mb-1">
-        Don't have account? <a href="{{ url('register') }}">Create an account</a>
+        Vous n'avez pas de compte ? <a href="#">Créer un compte</a>
       </p>
 
     </div>
@@ -96,3 +91,4 @@
 <script src="{{ asset('dist/js/adminlte.min.js') }}"></script>
 </body>
 </html>
+
